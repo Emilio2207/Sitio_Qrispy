@@ -20,10 +20,10 @@
             <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fas fa-plus"></i> Nuevo</a>
         </div>
         <div class="col-3 text-right">
-            <form class="form-inline" action="/admin/novedades" method="get">
-                <input class="form-control" type="search" placeholder="Buscar" 
+            <form class="d-flex" role="search" action="/admin/novedades" method="get">
+                <input class="form-control me-2" type="search" placeholder="Buscar" 
                 aria-label="Search" name="q" {{#if q}} value="{{q}}" {{/if}}>
-                <button class="btn-btn-secondary my-2 my-sm-0" type="submit">
+                <button class="btn btn-outline-success" type="submit">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
             </form>
